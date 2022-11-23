@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+    </style>
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="image">
+          <img src="/images/circle-logo.png" width="66%"">
+        </div>
+        <div class="text">Get started with your free account.</div>
+      </div>
+
+      <form method="get" action="./profile.html" id="form">
+        <label for="fullName">Full Name</label>
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          placeholder="Jane Doe"
+        />
+        <div class="error"></div>
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="janedoe@reada.com"
+        />
+        <div class="error"></div>
+
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="username"
+        />
+        <div class="error"></div>
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <div class="error"></div>
+
+        <button id="submit" type="submit">Create Account</button>
+      </form>
+    </div>
+  </body>
+</html>
