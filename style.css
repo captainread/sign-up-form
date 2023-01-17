@@ -7,19 +7,18 @@
 
 body {
   background-color: #f9f9f9;
-  /* background-image: url("/images/rectangle-logo.png" ); */
   color: #313c45;
 }
 
 .wrapper {
   display: flex;
-  flex-direction: row;
+  width: 100vw;
 }
 
 .sidebar {
   background-color: #e4684b;
   width: 33%;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .image {
@@ -33,8 +32,8 @@ body {
   text-align: right;
   color: white;
   font-size: 300%;
-  /* font-weight: bold; */
   margin-right: 10%;
+  margin-left: 10%;
 }
 
 form {
@@ -43,7 +42,6 @@ form {
   width: 40%;
   padding: 10px;
   margin: 15px;
-  /* margin-left: 20px; */
 }
 
 label {
@@ -91,7 +89,6 @@ button:hover {
 .profile {
   display: flex;
   flex-direction: column;
-  width: 40%;
   padding: 10px;
   margin: 15px;
   line-height: 2;
@@ -104,7 +101,36 @@ button:hover {
   margin-top: 1rem;
   margin-left: 0.3rem;
   border: 5px solid #e4684b;
-  /* border-radius: 30px; */
   max-width: 100%;
   max-height: 66%;
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar {
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    text-align: center;
+    width: 40%;
+  }
+  .text {
+    font-family: "Oswald";
+    text-align: center;
+    color: white;
+    font-size: 200%;
+  }
+  form {
+    display: flex;
+    width: 80%;
+  }
 }
