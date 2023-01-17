@@ -1,4 +1,4 @@
-# Dice Factor
+# ReadA signup
 
 ### Hosted site
 
